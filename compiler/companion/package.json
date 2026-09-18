@@ -17,8 +17,8 @@
   },
   "main": "src/index.js",
   "scripts": {
-    "build": "webpack",
-    "build-dev": "webpack --config webpack.dev.config.js",
+    "build": "node init && webpack",
+    "build-dev": "node init && webpack --config webpack.dev.config.js",
     "format": "prettier . --write",
     "test": "jest --no-watchman",
     "test-watch": "jest --watch",
@@ -60,7 +60,7 @@
     "ws": "^7.1.2",
     "xml-js": "^1.6.11",
     "yaml": "^2.1.1",
-    "remotedebug-ios-webkit-adapter":"file:./remotedebug-ios-webkit-adapter"
+    "remotedebug-ios-webkit-adapter": "file:./remotedebug-ios-webkit-adapter"
   },
   "peerDependencies": {
     "source-map": "^0.5.7",

@@ -6,7 +6,7 @@
   "main": "./out/index.js",
   "types": "./out/index.d.ts",
   "scripts": {
-    "build": "tsc"
+    "build": "node init && tsc"
   },
   "dependencies": {
     "typescript": "5.1.6"

@@ -12,7 +12,7 @@
   },
   "main": "dist/index.js",
   "scripts": {
-    "build": "npm exec --package=typescript@5.7.2 tsc",
+    "build": "node init && npm exec --package=typescript@5.7.2 tsc",
     "watch": "tsc --watch",
     "test": "npm run build && mocha --require tests/mocha-setup.mjs -R progress -c dist/tests/**/*.js",
     "prepare": "npm run build",
