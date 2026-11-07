@@ -6,8 +6,8 @@
   "main": "out/server.js",
   "types": "out/index.d.ts",
   "scripts": {
-    "start": "node init && node -r ts-node/register ./src/index.ts",
-    "build": "node init && gulp build",
+    "start": "node -r ts-node/register ./src/index.ts",
+    "build": "gulp build",
     "watch": "gulp watch",
     "test": "gulp test",
     "lint": "gulp lint"
